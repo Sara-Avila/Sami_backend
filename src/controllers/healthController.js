@@ -4,7 +4,6 @@ export async function getHealthStatus(req, res) {
   const services = {
     api: { status: 'up', uptime_seconds: Math.floor(process.uptime()) },
     postgres: { status: 'down', latency_ms: null, error: null },
-    mongodb: { status: 'down', latency_ms: null, error: null }
   };
 
   // 1. Evaluar PostgreSQL Pool
