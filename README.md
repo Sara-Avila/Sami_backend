@@ -56,11 +56,15 @@ Crea un archivo llamado `.env` en la carpeta principal del proyecto y agrega los
 
 ```env
 PORT=3000
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=postgres
-DB_PASSWORD=tu_contraseña
-DB_NAME=nombre_de_la_base_de_datos
+NODE_ENV=development
+PG_HOST=localhost
+PG_PORT=5432
+PG_DATABASE=Sami
+PG_USER=postgres
+PG_PASSWORD=12345678
+PG_MAX_POOL=10
+PG_IDLE_TIMEOUT=30000
+
 ```
 
 📌 Reemplaza los valores de acuerdo con la configuración de PostgreSQL de tu computador.
